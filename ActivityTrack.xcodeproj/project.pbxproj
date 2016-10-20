@@ -304,6 +304,7 @@
 				6505C7A81DB4C3B600FBA2A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
