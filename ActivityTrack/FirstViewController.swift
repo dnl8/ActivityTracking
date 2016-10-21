@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
     var decisionLevel = 0
     var oldTime:Double = 0
     var progress: KDCircularProgress!
-    var angleCounte = 0
+
     
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var lineView: UIView!
@@ -32,6 +32,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         initMotionManager()
         initProgressRing()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
       
     }
     
