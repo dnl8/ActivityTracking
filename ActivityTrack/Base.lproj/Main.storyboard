@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78F-et-ugC">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedometer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqI-dO-YIN" userLabel="Title">
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -70,7 +70,7 @@
                             <constraint firstItem="weG-gy-dBr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="22" id="2Py-r8-9nl"/>
                             <constraint firstItem="GHt-uc-sqN" firstAttribute="centerX" secondItem="78F-et-ugC" secondAttribute="centerX" id="BkJ-f4-RUz"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="weG-gy-dBr" secondAttribute="bottom" constant="240" id="EJH-Zn-w9m"/>
-                            <constraint firstItem="GHt-uc-sqN" firstAttribute="top" secondItem="78F-et-ugC" secondAttribute="bottom" constant="20" id="M3V-iw-R6e"/>
+                            <constraint firstItem="GHt-uc-sqN" firstAttribute="top" secondItem="78F-et-ugC" secondAttribute="bottom" constant="10" id="M3V-iw-R6e"/>
                             <constraint firstItem="LuF-rL-sUj" firstAttribute="centerY" secondItem="5QJ-O8-Vaa" secondAttribute="centerY" id="O2o-bJ-uqp"/>
                             <constraint firstItem="9cG-Gl-hsB" firstAttribute="centerY" secondItem="yHT-pb-yb5" secondAttribute="centerY" id="QtK-M4-ivb"/>
                             <constraint firstItem="OqI-dO-YIN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="25" id="WXq-Fv-qd6"/>
