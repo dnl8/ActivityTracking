@@ -1,4 +1,4 @@
 use_frameworks!
 
-target 'ActivityTracking'
+target 'ActivityTrack'
 pod 'KDCircularProgress'
