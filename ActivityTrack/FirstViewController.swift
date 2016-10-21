@@ -35,13 +35,13 @@ class FirstViewController: UIViewController {
     }
     
    public enum StepCountMode {
-            case HandMode,
-             TShirtPocketMode,
-             PocketMode
+            case handMode,
+             tShirtPocketMode,
+             pocketMode
     }
     
     
-    func handleStepCount(acceleration: CMAcceleration){
+    func handleStepCount(_ acceleration: CMAcceleration){
     
         accArrayX.append(acceleration.x)
         accArrayY.append(acceleration.y)
@@ -58,13 +58,13 @@ class FirstViewController: UIViewController {
                 {
                     if oldTime == 0.0 {
                         steps += 1
-                        oldTime = NSDate().timeIntervalSince1970
+                        oldTime = Date().timeIntervalSince1970
                     }else{
-                        diff = NSDate().timeIntervalSince1970 - oldTime
+                        diff = Date().timeIntervalSince1970 - oldTime
                         print(diff)
                         if diff > 0.2  {
                             steps += 1
-                            oldTime = NSDate().timeIntervalSince1970
+                            oldTime = Date().timeIntervalSince1970
                         }
                     }
 
@@ -77,13 +77,13 @@ class FirstViewController: UIViewController {
                 {
                     if oldTime == 0.0 {
                         steps += 1
-                        oldTime = NSDate().timeIntervalSince1970
+                        oldTime = Date().timeIntervalSince1970
                     }else{
-                        diff = NSDate().timeIntervalSince1970 - oldTime
+                        diff = Date().timeIntervalSince1970 - oldTime
                         print(diff)
                         if diff > 0.2  {
                             steps += 1
-                            oldTime = NSDate().timeIntervalSince1970
+                            oldTime = Date().timeIntervalSince1970
                         }
                     }
 
@@ -97,13 +97,13 @@ class FirstViewController: UIViewController {
                     
                     if oldTime == 0.0 {
                         steps += 1
-                        oldTime = NSDate().timeIntervalSince1970
+                        oldTime = Date().timeIntervalSince1970
                     }else{
-                        diff = NSDate().timeIntervalSince1970 - oldTime
+                        diff = Date().timeIntervalSince1970 - oldTime
                         print(diff)
                         if diff > 0.2  {
                             steps += 1
-                            oldTime = NSDate().timeIntervalSince1970
+                            oldTime = Date().timeIntervalSince1970
                         }
                     }
        
@@ -164,15 +164,15 @@ class FirstViewController: UIViewController {
                 (data,error) in
                 accelerationDataY.append((data?.userAcceleration.y)!)
                 if accelerationDataY.count % 10 == 0{
-                    self.stepCountMode = self.getStepCountMode(accelerationData: accelerationDataY)
+                    self.stepCountMode = self.getStepCountMode(accelerationDataY)
                     accelerationDataY.removeAll()
                 }
-                self.handleStepCount(acceleration: (data?.userAcceleration)!)
+                self.handleStepCount((data?.userAcceleration)!)
             }
         }
     }
     
-    func getStepCountMode(accelerationData:[Double]) ->StepCountMode {
+    func getStepCountMode(_ accelerationData:[Double]) ->StepCountMode {
         var pocketCount=0
         var tShirtPocketCount=0
     
@@ -185,13 +185,13 @@ class FirstViewController: UIViewController {
         }
         
         if pocketCount > 5 {
-          return StepCountMode.PocketMode
+          return StepCountMode.pocketMode
         }
         if tShirtPocketCount > 5 {
-           return StepCountMode.TShirtPocketMode
+           return StepCountMode.tShirtPocketMode
         }
         
-        return StepCountMode.HandMode
+        return StepCountMode.handMode
         
     }
 
