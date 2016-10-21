@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Pedometer-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ActivityTrack" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,19 +19,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78F-et-ugC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78F-et-ugC">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-uc-sqN" userLabel="GoalLabel">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedometer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqI-dO-YIN" userLabel="Title">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weG-gy-dBr" userLabel="Minimum">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHT-pb-yb5" userLabel="Maximum">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-O8-Vaa" userLabel="AvgDay">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybY-S1-B9R" userLabel="MinLabel">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cG-Gl-hsB" userLabel="MaxLabel">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuF-rL-sUj" userLabel="AvgLabel">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="78F-et-ugC" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="44" id="65y-10-lpU"/>
-                            <constraint firstItem="78F-et-ugC" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="8" id="b5T-fU-b9g"/>
+                            <constraint firstItem="weG-gy-dBr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="22" id="2Py-r8-9nl"/>
+                            <constraint firstItem="GHt-uc-sqN" firstAttribute="centerX" secondItem="78F-et-ugC" secondAttribute="centerX" id="BkJ-f4-RUz"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="weG-gy-dBr" secondAttribute="bottom" constant="240" id="EJH-Zn-w9m"/>
+                            <constraint firstItem="GHt-uc-sqN" firstAttribute="top" secondItem="78F-et-ugC" secondAttribute="bottom" constant="20" id="M3V-iw-R6e"/>
+                            <constraint firstItem="LuF-rL-sUj" firstAttribute="centerY" secondItem="5QJ-O8-Vaa" secondAttribute="centerY" id="O2o-bJ-uqp"/>
+                            <constraint firstItem="9cG-Gl-hsB" firstAttribute="centerY" secondItem="yHT-pb-yb5" secondAttribute="centerY" id="QtK-M4-ivb"/>
+                            <constraint firstItem="OqI-dO-YIN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="25" id="WXq-Fv-qd6"/>
+                            <constraint firstItem="OqI-dO-YIN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="YMG-ht-oJe"/>
+                            <constraint firstItem="yHT-pb-yb5" firstAttribute="leading" secondItem="weG-gy-dBr" secondAttribute="leading" id="bFE-qB-CIw"/>
+                            <constraint firstItem="5QJ-O8-Vaa" firstAttribute="top" secondItem="yHT-pb-yb5" secondAttribute="bottom" constant="20" id="bxn-PK-rxF"/>
+                            <constraint firstItem="yHT-pb-yb5" firstAttribute="top" secondItem="weG-gy-dBr" secondAttribute="bottom" constant="20" id="dgT-qD-Mcf"/>
+                            <constraint firstItem="LuF-rL-sUj" firstAttribute="leading" secondItem="9cG-Gl-hsB" secondAttribute="leading" id="idg-Ar-zkZ"/>
+                            <constraint firstItem="5QJ-O8-Vaa" firstAttribute="leading" secondItem="yHT-pb-yb5" secondAttribute="leading" id="pCS-Lh-IVh"/>
+                            <constraint firstItem="ybY-S1-B9R" firstAttribute="centerY" secondItem="weG-gy-dBr" secondAttribute="centerY" id="pFS-2y-rMz"/>
+                            <constraint firstItem="9cG-Gl-hsB" firstAttribute="leading" secondItem="ybY-S1-B9R" secondAttribute="leading" id="rPS-9F-TKe"/>
+                            <constraint firstItem="ybY-S1-B9R" firstAttribute="leading" secondItem="weG-gy-dBr" secondAttribute="trailing" constant="10" id="v67-nd-8yh"/>
+                            <constraint firstItem="78F-et-ugC" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ycm-ld-Sn0"/>
+                            <constraint firstItem="78F-et-ugC" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="150" id="z6x-QS-dRW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Pedometer" image="foot" selectedImage="foot" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="stepsLabel" destination="78F-et-ugC" id="rWP-3B-Y8o"/>
                     </connections>
@@ -40,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Second-->
+        <!--Heartrate-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ActivityTrack" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +128,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Heartrate" image="heart" selectedImage="heart" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +155,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="foot" width="25" height="25"/>
+        <image name="heart" width="24" height="24"/>
     </resources>
 </document>
