@@ -19,30 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2g0-v8-yf3">
-                                <frame key="frameInset" minY="490" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78F-et-ugC">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N88-VB-pap" userLabel="X">
-                                <frame key="frameInset" minX="16" minY="103" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O0-hu-ry0" userLabel="Y">
-                                <frame key="frameInset" minX="16" minY="152" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2We-fx-kLl" userLabel="Z">
-                                <frame key="frameInset" minX="16" minY="198" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,22 +28,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="78F-et-ugC" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="44" id="65y-10-lpU"/>
-                            <constraint firstItem="2We-fx-kLl" firstAttribute="top" secondItem="7O0-hu-ry0" secondAttribute="bottom" constant="25" id="6ct-P1-aI1"/>
-                            <constraint firstItem="N88-VB-pap" firstAttribute="top" secondItem="78F-et-ugC" secondAttribute="bottom" constant="18" id="HjM-T7-p1E"/>
-                            <constraint firstItem="N88-VB-pap" firstAttribute="leading" secondItem="78F-et-ugC" secondAttribute="leading" id="TON-dc-m2R"/>
                             <constraint firstItem="78F-et-ugC" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="8" id="b5T-fU-b9g"/>
-                            <constraint firstItem="7O0-hu-ry0" firstAttribute="leading" secondItem="N88-VB-pap" secondAttribute="leading" id="dKf-aq-7ZI"/>
-                            <constraint firstItem="7O0-hu-ry0" firstAttribute="top" secondItem="N88-VB-pap" secondAttribute="bottom" constant="10" id="ujz-sp-pe0"/>
-                            <constraint firstItem="2We-fx-kLl" firstAttribute="leading" secondItem="7O0-hu-ry0" secondAttribute="leading" id="xlZ-QE-Ylr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="lineView" destination="2g0-v8-yf3" id="XsS-Sd-fhY"/>
                         <outlet property="stepsLabel" destination="78F-et-ugC" id="rWP-3B-Y8o"/>
-                        <outlet property="xLabel" destination="N88-VB-pap" id="VQl-kk-kIo"/>
-                        <outlet property="yLabel" destination="7O0-hu-ry0" id="7iQ-A1-EAM"/>
-                        <outlet property="zLabel" destination="2We-fx-kLl" id="qXq-mu-gUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

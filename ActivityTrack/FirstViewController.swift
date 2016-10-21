@@ -22,9 +22,6 @@ class FirstViewController: UIViewController {
     var decisionLevel = 0
     var oldTime:Double = 0
     
-    @IBOutlet weak var yLabel: UILabel!
-    @IBOutlet weak var xLabel: UILabel!
-    @IBOutlet weak var zLabel: UILabel!
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var lineView: UIView!
   
@@ -144,9 +141,6 @@ class FirstViewController: UIViewController {
 
         }
         
-        xLabel.text = String(acceleration.x)
-        yLabel.text = String(acceleration.y)
-        zLabel.text = String(acceleration.z)
     }
     
 
