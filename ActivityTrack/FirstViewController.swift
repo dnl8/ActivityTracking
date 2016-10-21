@@ -12,6 +12,9 @@ import CoreMotion
 class FirstViewController: UIViewController {
     var motionManager: CMMotionManager!
     var stepCountMode: StepCountMode!
+    @IBOutlet weak var xLabel: UILabel!
+    @IBOutlet weak var yLabel: UILabel!
+    @IBOutlet weak var zLabel: UILabel!
     var pedometer : CMPedometer!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +40,13 @@ class FirstViewController: UIViewController {
         motionManager = CMMotionManager()
         if  motionManager.isAccelerometerAvailable {
             motionManager.startAccelerometerUpdates()
-            motionManager.accelerometerUpdateInterval = 0.1
+            motionManager.accelerometerUpdateInterval = 0.5
             motionManager.startAccelerometerUpdates(to: OperationQueue.main){
                 (data, error) in
                 accelerationDataY.append((data?.acceleration.y)!)
+                self.xLabel.text = String(format: "%.2f", (data?.acceleration.x)!)
+                self.yLabel.text = String(format: "%.2f", (data?.acceleration.y)!)
+                self.zLabel.text = String(format: "%.2f", (data?.acceleration.z)!)
                 if accelerationDataY.count == 10 {
                     self.stepCountMode = self.getStepCountMode(accelerationData: accelerationDataY)
                 }

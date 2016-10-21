@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController  {
 
+    @IBOutlet weak var heartRateLabel: UILabel!
+    
+    var heartRate : Int = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
