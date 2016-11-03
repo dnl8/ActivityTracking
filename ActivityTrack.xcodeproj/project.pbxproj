@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F0BCA5A1DB9FF3D00399197 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0BCA591DB9FF3D00399197 /* CoreBluetooth.framework */; };
+		3FE9D0E91DCB2B4500E7646B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FE9D0E81DCB2B4500E7646B /* GoogleService-Info.plist */; };
 		6505C7961DB4C3B600FBA2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505C7951DB4C3B600FBA2A7 /* AppDelegate.swift */; };
 		6505C7981DB4C3B600FBA2A7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505C7971DB4C3B600FBA2A7 /* FirstViewController.swift */; };
 		6505C79A1DB4C3B600FBA2A7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505C7991DB4C3B600FBA2A7 /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3F0BCA591DB9FF3D00399197 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3FE9D0E81DCB2B4500E7646B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4FB85E47F6BBA5170F0ECBEE /* Pods-ActivityTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTrack/Pods-ActivityTrack.release.xcconfig"; sourceTree = "<group>"; };
 		612321420620BB728F4FCCA2 /* Pods-ActivityTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTrack/Pods-ActivityTrack.debug.xcconfig"; sourceTree = "<group>"; };
 		6505C7921DB4C3B600FBA2A7 /* ActivityTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				6505C79E1DB4C3B600FBA2A7 /* Assets.xcassets */,
 				6505C7A01DB4C3B600FBA2A7 /* LaunchScreen.storyboard */,
 				6505C7A31DB4C3B600FBA2A7 /* Info.plist */,
+				3FE9D0E81DCB2B4500E7646B /* GoogleService-Info.plist */,
 			);
 			path = ActivityTrack;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6505C7A21DB4C3B600FBA2A7 /* LaunchScreen.storyboard in Resources */,
+				3FE9D0E91DCB2B4500E7646B /* GoogleService-Info.plist in Resources */,
 				6505C79F1DB4C3B600FBA2A7 /* Assets.xcassets in Resources */,
 				6505C79D1DB4C3B600FBA2A7 /* Main.storyboard in Resources */,
 			);

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AF26A3FD0FC8792772A07404BADFB69 /* KDCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A30AF3B013DF225D815749C6861F1D /* KDCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF26A3FD0FC8792772A07404BADFB69 /* KDCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2792142E56B1AE7FDAC8D7CB41D33083 /* KDCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E26213257FC50CB6E607687CF47F445 /* Pods-ActivityTrack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B538626BE1164DA3651ADBB843CC0B7 /* Pods-ActivityTrack-dummy.m */; };
 		4149217D13D35A13128BCA9A5B7572BB /* Pods-ActivityTrack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F658A01D8436CEBAE92D6C82AA64264 /* Pods-ActivityTrack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DA6BDE094996D5BA1BE3AD6E59417E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6216987541D6C08CCF13940601043053 /* KDCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EE157EFC46209B4C6DC90D4B7F5163 /* KDCircularProgress-dummy.m */; };
+		6216987541D6C08CCF13940601043053 /* KDCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66D24155F323054D669DDB433AF7A86 /* KDCircularProgress-dummy.m */; };
 		883EAC0EAA98C18E458D8B2D2392CDEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9F84961FB9777DB3D603922D26DFB703 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB4FD882FC10E914F838DC2A1AB992 /* KDCircularProgress.swift */; };
+		9F84961FB9777DB3D603922D26DFB703 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940441A1B14B23E7572445F95A187170 /* KDCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,27 +27,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025ABB40076579219CAF1350F8DD8B4A /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		0729C91583B4B42ACA83C28946BE2E76 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		0A52CD98EC885857A9A5888FAE0E17FF /* Pods-ActivityTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActivityTrack.debug.xcconfig"; sourceTree = "<group>"; };
-		298214841964B605DC3068A2681EDA9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D600E88FA3313D2A7908E9F4AF8051F /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		1270B3C2D9F7DCAB7D1357FCF7E17D2D /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		2792142E56B1AE7FDAC8D7CB41D33083 /* KDCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-umbrella.h"; sourceTree = "<group>"; };
+		2F7639FCEADCEC622E5888C964DFF2DD /* KDCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDCircularProgress.xcconfig; sourceTree = "<group>"; };
 		3EFAE0BB9A80C7B7CF2AEEA293A2214F /* Pods_ActivityTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4550BA603CF53E3D171BE839E2BE287E /* Pods-ActivityTrack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActivityTrack-resources.sh"; sourceTree = "<group>"; };
 		4B538626BE1164DA3651ADBB843CC0B7 /* Pods-ActivityTrack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActivityTrack-dummy.m"; sourceTree = "<group>"; };
-		4C24C177058EAD53DA7B2CC2656F038A /* KDCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KDCircularProgress.modulemap; sourceTree = "<group>"; };
 		5F658A01D8436CEBAE92D6C82AA64264 /* Pods-ActivityTrack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActivityTrack-umbrella.h"; sourceTree = "<group>"; };
-		675BFCA5607F5111D04140511E459D26 /* KDCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-prefix.pch"; sourceTree = "<group>"; };
-		6AAB4FD882FC10E914F838DC2A1AB992 /* KDCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
+		782B733C7EEC908CA1D4FC1AF7626D00 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		882B46D13023479D2E5FDF9C307F1752 /* KDCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89ECED2455A9DB2E1EE36A83F8A4F5EF /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940441A1B14B23E7572445F95A187170 /* KDCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
+		967E16CA67A6D302AEA534B12CB7633E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A97BE062530830A559C21DACA1712AF /* Pods-ActivityTrack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ActivityTrack.modulemap"; sourceTree = "<group>"; };
-		A1EE157EFC46209B4C6DC90D4B7F5163 /* KDCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDCircularProgress-dummy.m"; sourceTree = "<group>"; };
 		A4FD1A4B1DF4F3A50B6E9DE5B6F71018 /* Pods-ActivityTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActivityTrack.release.xcconfig"; sourceTree = "<group>"; };
-		A6A30AF3B013DF225D815749C6861F1D /* KDCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-umbrella.h"; sourceTree = "<group>"; };
 		ADC3A26F4467B1CA65ABC5DB78BF4BE2 /* Pods-ActivityTrack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActivityTrack-acknowledgements.plist"; sourceTree = "<group>"; };
 		B1B7475404439FE842E1FEA2A463B523 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B898F83E3CC2A01727ADABF2CB6D3B0E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		C04B8BFA6D44EA62AFAE5616CCB5EAD3 /* Pods-ActivityTrack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActivityTrack-frameworks.sh"; sourceTree = "<group>"; };
-		C1FD229E729A8D8540F3B852BBDAC95D /* KDCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDCircularProgress.xcconfig; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF7E68426E659972816F115697770808 /* KDCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-prefix.pch"; sourceTree = "<group>"; };
+		D5A5457A54B26AC034D2931195C95CC0 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		DFA969E08CF88E17E0707DFA1C979A0D /* Pods-ActivityTrack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ActivityTrack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F66D24155F323054D669DDB433AF7A86 /* KDCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDCircularProgress-dummy.m"; sourceTree = "<group>"; };
+		FD0E7BB311714F234D6562DABBDE51C4 /* KDCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KDCircularProgress.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +78,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3BBDDA6F5289B5DBAA918C9F47A42C0D /* Pods */ = {
+		0432CC020EDFC39BE9518E7DD41F2DA8 /* KDCircularProgress */ = {
 			isa = PBXGroup;
 			children = (
-				7373A9BA731790BF54D1000DA671471C /* KDCircularProgress */,
+				940441A1B14B23E7572445F95A187170 /* KDCircularProgress.swift */,
+				3CB6BCB16B68B5C9E9E6090347D1D82F /* Support Files */,
 			);
-			name = Pods;
+			path = KDCircularProgress;
+			sourceTree = "<group>";
+		};
+		1FC7240E8B67CE25AD880D967D5B0335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0729C91583B4B42ACA83C28946BE2E76 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C85569A915F8AAC31842F74AC292325 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				B3F2EDF99EB699FF169A12842F0EC17D /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		3CB6BCB16B68B5C9E9E6090347D1D82F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				967E16CA67A6D302AEA534B12CB7633E /* Info.plist */,
+				FD0E7BB311714F234D6562DABBDE51C4 /* KDCircularProgress.modulemap */,
+				2F7639FCEADCEC622E5888C964DFF2DD /* KDCircularProgress.xcconfig */,
+				F66D24155F323054D669DDB433AF7A86 /* KDCircularProgress-dummy.m */,
+				CF7E68426E659972816F115697770808 /* KDCircularProgress-prefix.pch */,
+				2792142E56B1AE7FDAC8D7CB41D33083 /* KDCircularProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KDCircularProgress";
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -112,27 +151,29 @@
 			path = "Target Support Files/Pods-ActivityTrack";
 			sourceTree = "<group>";
 		};
-		647807D2951123B093D17C49F2FAD659 /* Support Files */ = {
+		6011B894159FAB59DA89037A12C5ED06 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				298214841964B605DC3068A2681EDA9B /* Info.plist */,
-				4C24C177058EAD53DA7B2CC2656F038A /* KDCircularProgress.modulemap */,
-				C1FD229E729A8D8540F3B852BBDAC95D /* KDCircularProgress.xcconfig */,
-				A1EE157EFC46209B4C6DC90D4B7F5163 /* KDCircularProgress-dummy.m */,
-				675BFCA5607F5111D04140511E459D26 /* KDCircularProgress-prefix.pch */,
-				A6A30AF3B013DF225D815749C6861F1D /* KDCircularProgress-umbrella.h */,
+				0D600E88FA3313D2A7908E9F4AF8051F /* FIRInstanceID.h */,
+				A0D8EEBA42FD76DA4D4A27E8E7C70726 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/KDCircularProgress";
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		7373A9BA731790BF54D1000DA671471C /* KDCircularProgress */ = {
+		6B70CB51F822D69EEF5C0EF587C7D140 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				6AAB4FD882FC10E914F838DC2A1AB992 /* KDCircularProgress.swift */,
-				647807D2951123B093D17C49F2FAD659 /* Support Files */,
+				949FE88D59208C42F6BEDD5AB7255105 /* Frameworks */,
 			);
-			path = KDCircularProgress;
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		70EB9A634EE44A7E8C095B2E3374AA7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89ECED2455A9DB2E1EE36A83F8A4F5EF /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -140,10 +181,73 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3BBDDA6F5289B5DBAA918C9F47A42C0D /* Pods */,
+				941A782D11FFDF6B8D12E755CC711D13 /* Pods */,
 				DE35E9B645058A5FC87AC5C3C2962F8D /* Products */,
 				5A3514BDA40346053230797A2CA9E468 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8A57ED85656627CC316242F4951D29A9 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				A2B729B94EAEF877BFB4142B5A2BD0B5 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		8B47F094CB2055FDBB3E2D15B1268260 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1FC7240E8B67CE25AD880D967D5B0335 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		941A782D11FFDF6B8D12E755CC711D13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE49091259BFC729A747085A284CD6F0 /* Firebase */,
+				2C85569A915F8AAC31842F74AC292325 /* FirebaseAnalytics */,
+				E458A7337BB055DC404F9C4EA28903F6 /* FirebaseCore */,
+				6011B894159FAB59DA89037A12C5ED06 /* FirebaseInstanceID */,
+				6B70CB51F822D69EEF5C0EF587C7D140 /* GoogleInterchangeUtilities */,
+				8A57ED85656627CC316242F4951D29A9 /* GoogleSymbolUtilities */,
+				8B47F094CB2055FDBB3E2D15B1268260 /* GoogleUtilities */,
+				0432CC020EDFC39BE9518E7DD41F2DA8 /* KDCircularProgress */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		949FE88D59208C42F6BEDD5AB7255105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1270B3C2D9F7DCAB7D1357FCF7E17D2D /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0D8EEBA42FD76DA4D4A27E8E7C70726 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A5457A54B26AC034D2931195C95CC0 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2B729B94EAEF877BFB4142B5A2BD0B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782B733C7EEC908CA1D4FC1AF7626D00 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3F2EDF99EB699FF169A12842F0EC17D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B898F83E3CC2A01727ADABF2CB6D3B0E /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -154,6 +258,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D830020DBC0613B85200F740E94356D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				025ABB40076579219CAF1350F8DD8B4A /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		DE35E9B645058A5FC87AC5C3C2962F8D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +273,22 @@
 				3EFAE0BB9A80C7B7CF2AEEA293A2214F /* Pods_ActivityTrack.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E458A7337BB055DC404F9C4EA28903F6 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				70EB9A634EE44A7E8C095B2E3374AA7E /* Frameworks */,
+			);
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		FE49091259BFC729A747085A284CD6F0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D830020DBC0613B85200F740E94356D5 /* Core */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +522,7 @@
 		};
 		91B5F749B1527A1F736348790E5920BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1FD229E729A8D8540F3B852BBDAC95D /* KDCircularProgress.xcconfig */;
+			baseConfigurationReference = 2F7639FCEADCEC622E5888C964DFF2DD /* KDCircularProgress.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -466,7 +594,7 @@
 		};
 		C2A193FBA896E34822E1BA51895BA061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1FD229E729A8D8540F3B852BBDAC95D /* KDCircularProgress.xcconfig */;
+			baseConfigurationReference = 2F7639FCEADCEC622E5888C964DFF2DD /* KDCircularProgress.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
