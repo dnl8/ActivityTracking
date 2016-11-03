@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreMotion
+import KDCircularProgress
 
 class FirstViewController: UIViewController {
     var motionManager: CMMotionManager!
@@ -21,6 +22,8 @@ class FirstViewController: UIViewController {
     var accThreshold:Double = 0
     var decisionLevel = 0
     var oldTime:Double = 0
+    var progress: KDCircularProgress!
+
     
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var lineView: UIView!
@@ -28,7 +31,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initMotionManager()
-        // Do any additional setup after loading the view, typically from a nib.
+        initProgressRing()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
+      
     }
     
    public enum StepCountMode {
@@ -37,14 +42,27 @@ class FirstViewController: UIViewController {
              pocketMode
     }
     
+    func initProgressRing(){
+        progress = KDCircularProgress(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        progress.startAngle = -90
+        progress.progressThickness = 0.2
+        progress.trackThickness = 0.6
+        progress.clockwise = true
+        progress.gradientRotateSpeed = 2
+        progress.roundedCorners = false
+        progress.glowMode = .forward
+        progress.glowAmount = 0.9
+        progress.set(UIColor.cyan ,UIColor.white, UIColor.magenta, UIColor.white, UIColor.orange)
+        progress.center = CGPoint(x: view.center.x, y: view.frame.minY + 200)
+        view.addSubview(progress)
+    }
+    
     
     func handleStepCount(_ acceleration: CMAcceleration){
     
         accArrayX.append(acceleration.x)
         accArrayY.append(acceleration.y)
         accArrayZ.append(acceleration.z)
-
-       
         var diff:Double = 0.0
         
         if counter != 0 {
@@ -59,13 +77,13 @@ class FirstViewController: UIViewController {
                     }else{
                         diff = Date().timeIntervalSince1970 - oldTime
                         print(diff)
-                        if diff > 0.2  {
+                        if diff > 0.3  {
                             steps += 1
+                            self.progress.animate(0 ,toAngle: Double(steps) * 0.05, duration: 0.001, completion: nil)
+
                             oldTime = Date().timeIntervalSince1970
                         }
                     }
-
-    
                 }
                 break;
                 
@@ -78,13 +96,12 @@ class FirstViewController: UIViewController {
                     }else{
                         diff = Date().timeIntervalSince1970 - oldTime
                         print(diff)
-                        if diff > 0.2  {
+                        if diff > 0.3  {
                             steps += 1
+                            self.progress.animate(0, toAngle: Double(steps) * 0.05, duration: 0.001, completion: nil)
                             oldTime = Date().timeIntervalSince1970
                         }
                     }
-
-                    
                 }
                 break;
  
@@ -98,8 +115,9 @@ class FirstViewController: UIViewController {
                     }else{
                         diff = Date().timeIntervalSince1970 - oldTime
                         print(diff)
-                        if diff > 0.2  {
+                        if diff > 0.3  {
                             steps += 1
+                            self.progress.animate(0, toAngle: Double(steps) * 0.05, duration: 0.01, completion: nil)
                             oldTime = Date().timeIntervalSince1970
                         }
                     }
@@ -109,9 +127,9 @@ class FirstViewController: UIViewController {
             default:
                 break;
             }
-            DispatchQueue.global(qos: .userInitiated).async{
-             self.stepsLabel.text = String(self.steps)
-            }
+            self.stepsLabel.text = String(self.steps)
+            
+            
         }
         
         
