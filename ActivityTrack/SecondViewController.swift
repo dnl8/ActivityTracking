@@ -11,6 +11,7 @@ import CoreBluetooth
 
 class SecondViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
 
+    @IBOutlet weak var testLabel: UILabel!
     var heartRate:Int = 0
     var centralManager:CBCentralManager!
     var peripheral:CBPeripheral!
@@ -19,6 +20,7 @@ class SecondViewController: UIViewController, CBCentralManagerDelegate, CBPeriph
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
+       // var heartRateManager = HeartrateManager()
         
     }
 
@@ -84,8 +86,10 @@ class SecondViewController: UIViewController, CBCentralManagerDelegate, CBPeriph
         
         if let actualBpm = bpm{
             print(actualBpm)
+            testLabel.text = String(actualBpm)
         }else {
             print(bpm)
+            testLabel.text = String(describing: bpm)
         }
         
         

@@ -134,10 +134,54 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
+        <scene sceneID="ruO-31-CHp">
+            <objects>
+                <viewController id="w7z-lA-wOj" customClass="SettingsViewController" customModule="ActivityTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4NI-C5-5Vd"/>
+                        <viewControllerLayoutGuide type="bottom" id="XoW-uZ-EFY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UdN-8N-9q6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoS-s1-xoD">
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="userLoggedOut:" destination="w7z-lA-wOj" eventType="touchUpInside" id="be1-Tn-TL6"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3tO-ef-HYB">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eoS-s1-xoD" firstAttribute="centerY" secondItem="UdN-8N-9q6" secondAttribute="centerY" id="0Hd-dC-So9"/>
+                            <constraint firstItem="eoS-s1-xoD" firstAttribute="centerX" secondItem="UdN-8N-9q6" secondAttribute="centerX" id="Yl3-OI-WP2"/>
+                            <constraint firstItem="3tO-ef-HYB" firstAttribute="top" secondItem="4NI-C5-5Vd" secondAttribute="bottom" constant="235" id="ZGy-wp-2BI"/>
+                            <constraint firstItem="eoS-s1-xoD" firstAttribute="top" secondItem="3tO-ef-HYB" secondAttribute="bottom" constant="3" id="b1h-qo-MjC"/>
+                            <constraint firstItem="3tO-ef-HYB" firstAttribute="centerX" secondItem="eoS-s1-xoD" secondAttribute="centerX" id="fxv-3W-7ds"/>
+                            <constraint firstItem="3tO-ef-HYB" firstAttribute="leading" secondItem="UdN-8N-9q6" secondAttribute="leadingMargin" constant="51" id="kSe-H1-sU0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="IlB-rB-Wik"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="userLoggedIn" destination="3tO-ef-HYB" id="qWh-4v-4De"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlF-45-pFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="742.5787106446777"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="wn1-F9-nvg">
             <objects>
-                <viewController id="Mla-Z9-J5k" sceneMemberID="viewController">
+                <viewController id="Mla-Z9-J5k" customClass="LoginViewController" customModule="ActivityTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FxH-1i-fZu"/>
                         <viewControllerLayoutGuide type="bottom" id="7Lf-dR-Bar"/>
@@ -146,20 +190,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-2n-WyR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.at" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-2n-WyR">
                                 <frame key="frameInset" minX="139" minY="207" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uzl-i3-Du6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uzl-i3-Du6">
                                 <frame key="frameInset" minX="139" minY="245" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23K-Pw-K8B">
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signIn:" destination="Mla-Z9-J5k" eventType="touchUpInside" id="Z8E-IO-jkv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,6 +222,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="password" destination="Uzl-i3-Du6" id="Ltw-TW-T1P"/>
+                        <outlet property="username" destination="ea8-2n-WyR" id="zNn-bI-PRt"/>
                         <segue destination="49e-Tb-3d3" kind="showDetail" identifier="afterLogin" id="RVR-dk-Ggb"/>
                     </connections>
                 </viewController>
@@ -195,6 +244,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="w7z-lA-wOj" kind="relationship" relationship="viewControllers" id="KBq-xU-zC7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -205,5 +255,6 @@
     <resources>
         <image name="foot" width="25" height="25"/>
         <image name="heart" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
     </resources>
 </document>
