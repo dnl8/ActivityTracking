@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var userLoggedIn: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //comment
         
         
 
