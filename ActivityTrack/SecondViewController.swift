@@ -18,7 +18,9 @@ class SecondViewController: UIViewController, CBCentralManagerDelegate, CBPeriph
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.centralManager = CBCentralManager(delegate: self, queue: nil)
+        var heartrateManger = HeartrateManager()
+        
+      //  self.centralManager = CBCentralManager(delegate: self, queue: nil)
         
     }
 
