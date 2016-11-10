@@ -30,6 +30,7 @@ class FirstViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+     //   SampleReader.readDataFromFile(file: "lichtenberg")
         initMotionManager()
         initProgressRing()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)

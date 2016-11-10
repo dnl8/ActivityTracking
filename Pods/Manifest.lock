@@ -1,7 +1,10 @@
 PODS:
+<<<<<<< HEAD
   - Firebase/Auth (3.8.0):
     - Firebase/Core
     - FirebaseAuth (= 3.0.6)
+=======
+>>>>>>> 1051eaa07d97e088ef32b5055003b8ac90afdcf5
   - Firebase/Core (3.8.0):
     - FirebaseAnalytics (= 3.5.1)
     - FirebaseCore (= 3.4.4)
@@ -11,10 +14,13 @@ PODS:
     - GoogleInterchangeUtilities (~> 1.2)
     - GoogleSymbolUtilities (~> 1.1)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+<<<<<<< HEAD
   - FirebaseAuth (3.0.6):
     - FirebaseAnalytics (~> 3.4)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
+=======
+>>>>>>> 1051eaa07d97e088ef32b5055003b8ac90afdcf5
   - FirebaseCore (3.4.4):
     - GoogleInterchangeUtilities (~> 1.2)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
@@ -22,6 +28,7 @@ PODS:
   - GoogleInterchangeUtilities (1.2.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GoogleSymbolUtilities (1.1.2)
+<<<<<<< HEAD
   - GoogleToolboxForMac/DebugUtils (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
   - GoogleToolboxForMac/Defines (2.1.0)
@@ -33,6 +40,11 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
+=======
+  - GoogleToolboxForMac/Defines (2.1.0)
+  - GoogleToolboxForMac/NSData+zlib (2.1.0):
+    - GoogleToolboxForMac/Defines (= 2.1.0)
+>>>>>>> 1051eaa07d97e088ef32b5055003b8ac90afdcf5
   - KDCircularProgress (1.5.2)
 
 DEPENDENCIES:
@@ -43,13 +55,19 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Firebase: fdbecadb7b5cbef2774852d4fa659b9daf11f2af
   FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
+<<<<<<< HEAD
   FirebaseAuth: 96e9674ff31d6e1f826d53e26aa003a57cab0295
+=======
+>>>>>>> 1051eaa07d97e088ef32b5055003b8ac90afdcf5
   FirebaseCore: d0ed25f27b6f9158eccc439f1be6f92e81207e28
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+<<<<<<< HEAD
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+=======
+>>>>>>> 1051eaa07d97e088ef32b5055003b8ac90afdcf5
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
 
 PODFILE CHECKSUM: 14550139c990cd77f37765991a28876b956079f7
